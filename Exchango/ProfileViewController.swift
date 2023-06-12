@@ -9,7 +9,21 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
-    override func viewDidLoad() {
+  
+  @IBOutlet var ProfilePictureView: UIImageView!
+  @IBOutlet var UserNameLabel: UILabel!
+  @IBOutlet var MemberLabel: UILabel!
+  @IBOutlet var MessagesView: UIView!
+  @IBOutlet var WatchlistView: UIView!
+  @IBOutlet var SavedView: UIView!
+  @IBOutlet var RecentView: UIView!
+  @IBOutlet var WalletView: UIView!
+  @IBOutlet var HelpView: UIView!
+  @IBOutlet var SettingsView: UIView!
+  
+  
+  
+  override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

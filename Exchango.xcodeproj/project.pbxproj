@@ -12,6 +12,8 @@
 		7E1D197C2A2ED26300F2EF3B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1D197B2A2ED26300F2EF3B /* ProfileViewController.swift */; };
 		7E1D197E2A2FA4F400F2EF3B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1D197D2A2FA4F400F2EF3B /* LoginViewController.swift */; };
 		7E1D19802A2FE9DC00F2EF3B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1D197F2A2FE9DC00F2EF3B /* WelcomeViewController.swift */; };
+		7E1D19822A3A191C00F2EF3B /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1D19812A3A191C00F2EF3B /* NewViewController.swift */; };
+		7E1D19842A3A1E5800F2EF3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E1D19832A3A1E5800F2EF3B /* GoogleService-Info.plist */; };
 		7E34F9162A2A4E5800F7E99E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34F9152A2A4E5800F7E99E /* AppDelegate.swift */; };
 		7E34F9182A2A4E5800F7E99E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E34F9172A2A4E5800F7E99E /* SceneDelegate.swift */; };
 		7E34F91D2A2A4E5800F7E99E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E34F91B2A2A4E5800F7E99E /* Main.storyboard */; };
@@ -25,6 +27,8 @@
 		7E1D197B2A2ED26300F2EF3B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7E1D197D2A2FA4F400F2EF3B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7E1D197F2A2FE9DC00F2EF3B /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		7E1D19812A3A191C00F2EF3B /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		7E1D19832A3A1E5800F2EF3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7E34F9122A2A4E5800F7E99E /* Exchango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exchango.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E34F9152A2A4E5800F7E99E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E34F9172A2A4E5800F7E99E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,12 +72,14 @@
 				7E34F9172A2A4E5800F7E99E /* SceneDelegate.swift */,
 				7E1D19772A2ED22700F2EF3B /* SearchViewController.swift */,
 				7E1D19792A2ED24100F2EF3B /* HomeViewController.swift */,
+				7E1D19812A3A191C00F2EF3B /* NewViewController.swift */,
 				7E1D197B2A2ED26300F2EF3B /* ProfileViewController.swift */,
 				7E1D197D2A2FA4F400F2EF3B /* LoginViewController.swift */,
 				7E1D197F2A2FE9DC00F2EF3B /* WelcomeViewController.swift */,
 				7E34F91B2A2A4E5800F7E99E /* Main.storyboard */,
 				7E34F91E2A2A4E5900F7E99E /* Assets.xcassets */,
 				7E34F9202A2A4E5900F7E99E /* LaunchScreen.storyboard */,
+				7E1D19832A3A1E5800F2EF3B /* GoogleService-Info.plist */,
 				7E34F9232A2A4E5900F7E99E /* Info.plist */,
 			);
 			path = Exchango;
@@ -138,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E34F9222A2A4E5900F7E99E /* LaunchScreen.storyboard in Resources */,
+				7E1D19842A3A1E5800F2EF3B /* GoogleService-Info.plist in Resources */,
 				7EFCFA982A2A6584007B36D0 /* Assets.xcassets in Resources */,
 				7E34F91D2A2A4E5800F7E99E /* Main.storyboard in Resources */,
 			);
@@ -153,6 +160,7 @@
 				7E1D197E2A2FA4F400F2EF3B /* LoginViewController.swift in Sources */,
 				7E1D19782A2ED22700F2EF3B /* SearchViewController.swift in Sources */,
 				7E34F9162A2A4E5800F7E99E /* AppDelegate.swift in Sources */,
+				7E1D19822A3A191C00F2EF3B /* NewViewController.swift in Sources */,
 				7E1D197C2A2ED26300F2EF3B /* ProfileViewController.swift in Sources */,
 				7E34F9182A2A4E5800F7E99E /* SceneDelegate.swift in Sources */,
 				7E1D197A2A2ED24100F2EF3B /* HomeViewController.swift in Sources */,

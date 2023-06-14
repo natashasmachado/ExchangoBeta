@@ -6,24 +6,60 @@
 //
 
 import UIKit
+import SafariServices
 
 class LoginViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+  
+  @IBOutlet var EmailField: UITextField!
+  @IBOutlet var PasswordField: UITextField!
+  @IBOutlet var LoginButton: UIButton!
+  @IBOutlet var ForgotPasswordButton: UIButton!
+  @IBOutlet var SignUpButton: UIButton!
+  @IBOutlet var GoogleButton: UIButton!
+  @IBOutlet var AppleButton: UIButton!
+  @IBOutlet var FacebookButton: UIButton!
+  
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+  
+  @IBAction func appleButtonPressed(_ sender: Any) {
+    openAppleLogin()
+  }
+  
+  @IBAction func googleButtonPressed(_ sender: Any) {
+    openGoogleLoginPage()
+  }
+  
+  @IBAction func facebookButtonPressed(_ sender: Any) {
+    openFacebookLoginPage()
+  }
+  
+  
+  func openGoogleLoginPage() {
+    if let url = URL(string: "https://accounts.google.com") {
+      let safariViewController = SFSafariViewController(url: url)
+      safariViewController.modalPresentationStyle = .popover
+      present(safariViewController, animated: true, completion: nil)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+  }
+  
+  func openFacebookLoginPage() {
+    if let url = URL(string: "https://www.facebook.com") {
+      let safariViewController = SFSafariViewController(url: url)
+      safariViewController.modalPresentationStyle = .popover
+      present(safariViewController, animated: true, completion: nil)
     }
-    */
-
+  }
+  
+  func openAppleLogin() {
+    if let url = URL(string: "https://appleid.apple.com/sign-in") {
+      let safariViewController = SFSafariViewController(url: url)
+      safariViewController.modalPresentationStyle = .popover
+      present(safariViewController, animated: true, completion: nil)
+      
+    }
+  }
 }
+

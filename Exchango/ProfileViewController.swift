@@ -8,7 +8,7 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+  
   
   @IBOutlet var ProfilePictureView: UIImageView!
   @IBOutlet var UserNameLabel: UILabel!
@@ -24,20 +24,16 @@ class ProfileViewController: UIViewController {
   
   
   override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+    super.viewDidLoad()
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    let cornerRadius: CGFloat = 15.0
+    let viewsToRound: [UIView] = [MessagesView, WatchlistView, SavedView, RecentView]
+    
+    for view in viewsToRound {
+      view.layer.cornerRadius = cornerRadius
+      view.clipsToBounds = true
     }
-    */
-
+  }
+  
+  
 }

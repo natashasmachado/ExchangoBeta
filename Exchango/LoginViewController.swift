@@ -37,6 +37,7 @@ class LoginViewController: UIViewController {
   }
   
   
+  
   func openGoogleLoginPage() {
     if let url = URL(string: "https://accounts.google.com") {
       let safariViewController = SFSafariViewController(url: url)

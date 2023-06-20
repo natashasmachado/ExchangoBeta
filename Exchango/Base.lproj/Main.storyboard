@@ -1023,7 +1023,6 @@
                                             <color key="baseBackgroundColor" red="0.72156862749999995" green="0.82352941180000006" blue="0.90588235289999997" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="loginButtonPressed:" destination="u5e-77-VCL" eventType="touchUpInside" id="H1R-Th-Em5"/>
                                             <segue destination="38m-jH-Etc" kind="show" id="7hZ-R8-F1f"/>
                                         </connections>
                                     </button>
@@ -1059,6 +1058,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="New here? Sign Up">
                                             <fontDescription key="titleFontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="S59-Ft-pgN" kind="show" id="ig7-8h-vly"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -1175,24 +1177,211 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXU-4N-Lyb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1265" y="-2229"/>
+            <point key="canvasLocation" x="1265" y="-1998"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="k66-iR-Db7">
             <objects>
-                <viewController id="S59-Ft-pgN" sceneMemberID="viewController">
+                <viewController id="S59-Ft-pgN" customClass="SignUpViewController" customModule="Exchango" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ydF-bp-arI">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recex" translatesAutoresizingMaskIntoConstraints="NO" id="hNC-7G-FNa">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="DLP-Ws-SPb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="IMB-7O-r8m"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y3X-sA-psM">
+                                <rect key="frame" x="20" y="110" width="353" height="489"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BW4-4D-Atc">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="l3d-2k-lur"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="First Name ">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="17" name="DINCondensed-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2D9-xd-0tW">
+                                        <rect key="frame" x="0.0" y="30" width="353" height="34"/>
+                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHN-3t-wQP">
+                                        <rect key="frame" x="0.0" y="74" width="58.666666666666664" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="glk-FJ-vJm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Last Name " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FMs-P2-rZS">
+                                        <rect key="frame" x="0.0" y="104" width="353" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="1Cc-X2-j1d"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSH-E2-dZc">
+                                        <rect key="frame" x="0.0" y="149" width="53.666666666666664" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="gDn-xR-2ZX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZa-Rl-uO1">
+                                        <rect key="frame" x="0.0" y="179" width="95" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="JUh-J9-sDs"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nC-g2-pNg">
+                                        <rect key="frame" x="0.0" y="224" width="32.666666666666664" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="mCy-pt-dz4"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="EMAIL">
+                                                <attributes>
+                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <font key="NSFont" size="17" name="DINCondensed-Bold"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confirm your email address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F2G-pX-z3c">
+                                        <rect key="frame" x="0.0" y="254" width="212" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="K6j-ar-0Df"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXS-NV-zlc">
+                                        <rect key="frame" x="0.0" y="299" width="51.666666666666664" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="xcc-6n-b4Q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Must have numbers and letters" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bi-kk-8Ce">
+                                        <rect key="frame" x="0.0" y="329" width="238" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Tst-x6-TRd"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                        <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of birth" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxG-A9-Han">
+                                        <rect key="frame" x="0.0" y="374" width="64.333333333333329" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="ctC-3C-MVe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="zp6-L0-YmM">
+                                        <rect key="frame" x="0.0" y="404" width="353" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="Zg4-dG-Upa"/>
+                                        </constraints>
+                                        <locale key="locale" localeIdentifier="en_CA"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWm-sS-glG">
+                                        <rect key="frame" x="0.0" y="449" width="353" height="40"/>
+                                        <color key="backgroundColor" red="0.72156862749999995" green="0.82352941180000006" blue="0.90588235289999997" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="OM9-Bs-kp2"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.72156862749999995" green="0.82352941180000006" blue="0.90588235289999997" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <size key="titleShadowOffset" width="3" height="4"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign Up  " cornerStyle="capsule">
+                                            <fontDescription key="titleFontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="24"/>
+                                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseBackgroundColor" red="0.72156862749999995" green="0.82352941180000006" blue="0.90588235289999997" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="38m-jH-Etc" kind="show" id="vBK-lG-IcU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2D9-xd-0tW" firstAttribute="leading" secondItem="y3X-sA-psM" secondAttribute="leading" id="0CU-Nu-OZy"/>
+                                    <constraint firstItem="XHN-3t-wQP" firstAttribute="leading" secondItem="y3X-sA-psM" secondAttribute="leading" id="4ul-yz-m8D"/>
+                                    <constraint firstAttribute="bottom" secondItem="SWm-sS-glG" secondAttribute="bottom" id="6ZU-Ib-4M8"/>
+                                    <constraint firstItem="BW4-4D-Atc" firstAttribute="leading" secondItem="y3X-sA-psM" secondAttribute="leading" id="BNa-dS-nPd"/>
+                                    <constraint firstItem="FMs-P2-rZS" firstAttribute="leading" secondItem="y3X-sA-psM" secondAttribute="leading" id="UiU-Mm-5su"/>
+                                    <constraint firstItem="SWm-sS-glG" firstAttribute="leading" secondItem="y3X-sA-psM" secondAttribute="leading" id="WPc-6q-eMy"/>
+                                    <constraint firstAttribute="trailing" secondItem="SWm-sS-glG" secondAttribute="trailing" id="dwE-m5-cU4"/>
+                                    <constraint firstAttribute="trailing" secondItem="zp6-L0-YmM" secondAttribute="trailing" id="oBN-RE-3xw"/>
+                                    <constraint firstItem="zp6-L0-YmM" firstAttribute="leading" secondItem="y3X-sA-psM" secondAttribute="leading" id="qUv-Ot-8Dr"/>
+                                    <constraint firstItem="BW4-4D-Atc" firstAttribute="top" secondItem="y3X-sA-psM" secondAttribute="top" id="uZe-Oa-tdD"/>
+                                    <constraint firstAttribute="trailing" secondItem="2D9-xd-0tW" secondAttribute="trailing" id="wFx-An-xnH"/>
+                                    <constraint firstAttribute="trailing" secondItem="FMs-P2-rZS" secondAttribute="trailing" id="zVK-Vh-9FO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ejd-0m-R30"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.047058823530000002" green="0.75294117650000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="y3X-sA-psM" firstAttribute="top" secondItem="hNC-7G-FNa" secondAttribute="bottom" constant="10" id="06g-sS-OeO"/>
+                            <constraint firstItem="Ejd-0m-R30" firstAttribute="trailing" secondItem="y3X-sA-psM" secondAttribute="trailing" constant="20" id="USe-zk-efl"/>
+                            <constraint firstItem="hNC-7G-FNa" firstAttribute="leading" secondItem="ydF-bp-arI" secondAttribute="leading" id="hd6-MS-ApA"/>
+                            <constraint firstItem="Ejd-0m-R30" firstAttribute="trailing" secondItem="hNC-7G-FNa" secondAttribute="trailing" id="ooX-Tm-Wld"/>
+                            <constraint firstItem="y3X-sA-psM" firstAttribute="leading" secondItem="Ejd-0m-R30" secondAttribute="leading" constant="20" id="pOU-Oo-oKY"/>
+                            <constraint firstItem="hNC-7G-FNa" firstAttribute="top" secondItem="Ejd-0m-R30" secondAttribute="top" id="s9N-1V-FVV"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zFn-6q-YI7"/>
+                    <connections>
+                        <outlet property="DateOfBirth" destination="zp6-L0-YmM" id="o1D-84-GKN"/>
+                        <outlet property="Email" destination="F2G-pX-z3c" id="1u9-hP-FuE"/>
+                        <outlet property="FirstName" destination="2D9-xd-0tW" id="nvC-ij-0u3"/>
+                        <outlet property="LastName" destination="FMs-P2-rZS" id="I0B-sQ-lUp"/>
+                        <outlet property="Password" destination="6bi-kk-8Ce" id="8gM-iT-msU"/>
+                        <outlet property="SignUpCompleteButton" destination="SWm-sS-glG" id="oli-Zs-xq2"/>
+                        <outlet property="Username" destination="wZa-Rl-uO1" id="EGV-yX-3Rn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLM-D8-hZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18" y="-18"/>
+            <point key="canvasLocation" x="126" y="-2415"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vBK-lG-IcU"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Exchango 32" width="32" height="32"/>
         <image name="arrow.clockwise" catalog="system" width="113" height="128"/>

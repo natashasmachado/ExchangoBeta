@@ -159,6 +159,7 @@
                         <outlet property="AddDescriptionButton" destination="Leb-Ay-owQ" id="Ors-EE-ftu"/>
                         <outlet property="AddPhotosButton" destination="Pl9-za-ZP2" id="Xyu-gb-LG2"/>
                         <outlet property="ConfirmIdButton" destination="qTV-VB-eSS" id="dOZ-wI-dBs"/>
+                        <outlet property="UsernameLabel" destination="mp6-ue-EHh" id="WwL-Mv-IUC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYT-Xh-bhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -630,6 +631,14 @@
                     <tabBarItem key="tabBarItem" title="home" id="Pam-Sw-poM">
                         <imageReference key="image" image="house.fill" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="ProductCategoryLabel" destination="B0k-wl-kvb" id="Isw-kO-CR9"/>
+                        <outlet property="ProductDescriptionLabel" destination="BpE-je-W08" id="0K5-bv-hQy"/>
+                        <outlet property="ProductNameLabel" destination="EJk-g9-oL0" id="gSX-aD-TG2"/>
+                        <outlet property="ProductValueLabel" destination="EDA-sn-jYr" id="Na2-kL-Rn7"/>
+                        <outlet property="SearchBarHome" destination="POJ-Ra-cGc" id="wnJ-dz-3Ge"/>
+                        <outlet property="UserHandleLabel" destination="P3Z-g1-ijC" id="43l-96-p4R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yvQ-Vv-utb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1214,7 +1223,7 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2D9-xd-0tW">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name " borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2D9-xd-0tW">
                                         <rect key="frame" x="0.0" y="30" width="353" height="34"/>
                                         <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
@@ -1230,7 +1239,7 @@
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Last Name " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FMs-P2-rZS">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Last Name " borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FMs-P2-rZS">
                                         <rect key="frame" x="0.0" y="104" width="353" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="1Cc-X2-j1d"/>
@@ -1249,7 +1258,7 @@
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZa-Rl-uO1">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wZa-Rl-uO1">
                                         <rect key="frame" x="0.0" y="179" width="95" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="JUh-J9-sDs"/>
@@ -1273,7 +1282,7 @@
                                         </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confirm your email address" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F2G-pX-z3c">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Confirm your email address" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F2G-pX-z3c">
                                         <rect key="frame" x="0.0" y="254" width="212" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="K6j-ar-0Df"/>
@@ -1291,7 +1300,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Must have numbers and letters" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bi-kk-8Ce">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Must have numbers and letters" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6bi-kk-8Ce">
                                         <rect key="frame" x="0.0" y="329" width="238" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="Tst-x6-TRd"/>
@@ -1311,6 +1320,8 @@
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="zp6-L0-YmM">
                                         <rect key="frame" x="0.0" y="404" width="353" height="35"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="Zg4-dG-Upa"/>
                                         </constraints>
@@ -1332,7 +1343,7 @@
                                             <color key="baseBackgroundColor" red="0.72156862749999995" green="0.82352941180000006" blue="0.90588235289999997" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="38m-jH-Etc" kind="show" id="vBK-lG-IcU"/>
+                                            <action selector="signUpButtonPressed:" destination="S59-Ft-pgN" eventType="touchUpInside" id="fcc-cJ-uGA"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1379,9 +1390,6 @@
             <point key="canvasLocation" x="126" y="-2415"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="vBK-lG-IcU"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="Exchango 32" width="32" height="32"/>
         <image name="arrow.clockwise" catalog="system" width="113" height="128"/>

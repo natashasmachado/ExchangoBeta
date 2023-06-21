@@ -16,12 +16,15 @@ class NewViewController: UIViewController, UIImagePickerControllerDelegate, UINa
   @IBOutlet var UsernameLabel: UILabel!
   @IBOutlet var collectionView: UICollectionView!
   
+  var username: String?
   var availabilityLabel: UILabel!
   var selectedImages: [UIImage] = []
   
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    UsernameLabel.text = username
     
     collectionView?.register(UINib(nibName: "PhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PhotoCollectionViewCell")
     collectionView?.dataSource = self

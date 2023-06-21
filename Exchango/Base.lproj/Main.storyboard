@@ -123,7 +123,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vE-tf-ryy">
-                                <rect key="frame" x="25" y="743" width="343" height="40"/>
+                                <rect key="frame" x="25" y="704" width="343" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="g9W-SP-6Sd"/>
                                 </constraints>
@@ -153,6 +153,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="new" image="plus.app" catalog="system" id="u23-LA-JeZ"/>
+                    <navigationItem key="navigationItem" id="9Gc-bD-gRM"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="AddAvailabilityButton" destination="sfq-HC-hoM" id="hMl-Ar-T6o"/>
@@ -1207,34 +1208,28 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y3X-sA-psM">
                                 <rect key="frame" x="20" y="110" width="353" height="489"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BW4-4D-Atc">
-                                        <rect key="frame" x="0.0" y="0.0" width="60" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIRST NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DxX-LQ-lv3">
+                                        <rect key="frame" x="0.0" y="0.0" width="74.333333333333329" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="20" id="l3d-2k-lur"/>
+                                            <constraint firstAttribute="height" constant="20" id="VQV-uM-AS9"/>
                                         </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="First Name ">
-                                                <attributes>
-                                                    <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" size="17" name="DINCondensed-Bold"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="First Name " borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2D9-xd-0tW">
                                         <rect key="frame" x="0.0" y="30" width="353" height="34"/>
-                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHN-3t-wQP">
-                                        <rect key="frame" x="0.0" y="74" width="58.666666666666664" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHN-3t-wQP">
+                                        <rect key="frame" x="0.0" y="74" width="69.666666666666671" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="glk-FJ-vJm"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
@@ -1244,16 +1239,15 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="1Cc-X2-j1d"/>
                                         </constraints>
-                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSH-E2-dZc">
-                                        <rect key="frame" x="0.0" y="149" width="53.666666666666664" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSH-E2-dZc">
+                                        <rect key="frame" x="0.0" y="149" width="68.333333333333329" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="gDn-xR-2ZX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
@@ -1263,12 +1257,11 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="JUh-J9-sDs"/>
                                         </constraints>
-                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nC-g2-pNg">
-                                        <rect key="frame" x="0.0" y="224" width="32.666666666666664" height="20"/>
+                                        <rect key="frame" x="0.0" y="224" width="38.333333333333336" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="mCy-pt-dz4"/>
                                         </constraints>
@@ -1276,7 +1269,7 @@
                                             <fragment content="EMAIL">
                                                 <attributes>
                                                     <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <font key="NSFont" size="17" name="DINCondensed-Bold"/>
+                                                    <font key="NSFont" size="20" name="DINCondensed-Bold"/>
                                                 </attributes>
                                             </fragment>
                                         </attributedString>
@@ -1287,16 +1280,15 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="K6j-ar-0Df"/>
                                         </constraints>
-                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXS-NV-zlc">
-                                        <rect key="frame" x="0.0" y="299" width="51.666666666666664" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXS-NV-zlc">
+                                        <rect key="frame" x="0.0" y="299" width="69" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="xcc-6n-b4Q"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1305,16 +1297,15 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="Tst-x6-TRd"/>
                                         </constraints>
-                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
                                         <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of birth" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxG-A9-Han">
-                                        <rect key="frame" x="0.0" y="374" width="64.333333333333329" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DATE OF BIRTH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VxG-A9-Han">
+                                        <rect key="frame" x="0.0" y="374" width="88.666666666666671" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="ctC-3C-MVe"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1336,7 +1327,7 @@
                                         <color key="tintColor" red="0.72156862749999995" green="0.82352941180000006" blue="0.90588235289999997" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                         <size key="titleShadowOffset" width="3" height="4"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Sign Up  " cornerStyle="capsule">
+                                        <buttonConfiguration key="configuration" style="filled" title="SIGN UP " cornerStyle="capsule">
                                             <fontDescription key="titleFontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="24"/>
                                             <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1351,31 +1342,56 @@
                                     <constraint firstItem="2D9-xd-0tW" firstAttribute="leading" secondItem="y3X-sA-psM" secondAttribute="leading" id="0CU-Nu-OZy"/>
                                     <constraint firstItem="XHN-3t-wQP" firstAttribute="leading" secondItem="y3X-sA-psM" secondAttribute="leading" id="4ul-yz-m8D"/>
                                     <constraint firstAttribute="bottom" secondItem="SWm-sS-glG" secondAttribute="bottom" id="6ZU-Ib-4M8"/>
-                                    <constraint firstItem="BW4-4D-Atc" firstAttribute="leading" secondItem="y3X-sA-psM" secondAttribute="leading" id="BNa-dS-nPd"/>
                                     <constraint firstItem="FMs-P2-rZS" firstAttribute="leading" secondItem="y3X-sA-psM" secondAttribute="leading" id="UiU-Mm-5su"/>
                                     <constraint firstItem="SWm-sS-glG" firstAttribute="leading" secondItem="y3X-sA-psM" secondAttribute="leading" id="WPc-6q-eMy"/>
                                     <constraint firstAttribute="trailing" secondItem="SWm-sS-glG" secondAttribute="trailing" id="dwE-m5-cU4"/>
                                     <constraint firstAttribute="trailing" secondItem="zp6-L0-YmM" secondAttribute="trailing" id="oBN-RE-3xw"/>
                                     <constraint firstItem="zp6-L0-YmM" firstAttribute="leading" secondItem="y3X-sA-psM" secondAttribute="leading" id="qUv-Ot-8Dr"/>
-                                    <constraint firstItem="BW4-4D-Atc" firstAttribute="top" secondItem="y3X-sA-psM" secondAttribute="top" id="uZe-Oa-tdD"/>
                                     <constraint firstAttribute="trailing" secondItem="2D9-xd-0tW" secondAttribute="trailing" id="wFx-An-xnH"/>
                                     <constraint firstAttribute="trailing" secondItem="FMs-P2-rZS" secondAttribute="trailing" id="zVK-Vh-9FO"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8U-kF-13l">
+                                <rect key="frame" x="150" y="757" width="93" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="MZf-fL-RZC"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Cancel">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="17" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="S59-Ft-pgN" eventType="touchUpInside" id="aTZ-pH-alw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ejd-0m-R30"/>
                         <color key="backgroundColor" red="0.047058823530000002" green="0.75294117650000003" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="y3X-sA-psM" firstAttribute="top" secondItem="hNC-7G-FNa" secondAttribute="bottom" constant="10" id="06g-sS-OeO"/>
+                            <constraint firstItem="Ejd-0m-R30" firstAttribute="trailing" secondItem="X8U-kF-13l" secondAttribute="trailing" constant="150" id="2jT-dA-RLd"/>
                             <constraint firstItem="Ejd-0m-R30" firstAttribute="trailing" secondItem="y3X-sA-psM" secondAttribute="trailing" constant="20" id="USe-zk-efl"/>
                             <constraint firstItem="hNC-7G-FNa" firstAttribute="leading" secondItem="ydF-bp-arI" secondAttribute="leading" id="hd6-MS-ApA"/>
+                            <constraint firstAttribute="bottom" secondItem="X8U-kF-13l" secondAttribute="bottom" constant="50" id="m6e-jc-lTT"/>
                             <constraint firstItem="Ejd-0m-R30" firstAttribute="trailing" secondItem="hNC-7G-FNa" secondAttribute="trailing" id="ooX-Tm-Wld"/>
                             <constraint firstItem="y3X-sA-psM" firstAttribute="leading" secondItem="Ejd-0m-R30" secondAttribute="leading" constant="20" id="pOU-Oo-oKY"/>
                             <constraint firstItem="hNC-7G-FNa" firstAttribute="top" secondItem="Ejd-0m-R30" secondAttribute="top" id="s9N-1V-FVV"/>
+                            <constraint firstItem="X8U-kF-13l" firstAttribute="leading" secondItem="Ejd-0m-R30" secondAttribute="leading" constant="150" id="yj6-Os-Rsy"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="zFn-6q-YI7"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="CancelButton" destination="X8U-kF-13l" id="i4f-08-PZ6"/>
                         <outlet property="DateOfBirth" destination="zp6-L0-YmM" id="o1D-84-GKN"/>
                         <outlet property="Email" destination="F2G-pX-z3c" id="1u9-hP-FuE"/>
                         <outlet property="FirstName" destination="2D9-xd-0tW" id="nvC-ij-0u3"/>
@@ -1383,13 +1399,17 @@
                         <outlet property="Password" destination="6bi-kk-8Ce" id="8gM-iT-msU"/>
                         <outlet property="SignUpCompleteButton" destination="SWm-sS-glG" id="oli-Zs-xq2"/>
                         <outlet property="Username" destination="wZa-Rl-uO1" id="EGV-yX-3Rn"/>
+                        <segue destination="Sym-8i-Z5n" kind="show" customClass="NewViewControllerSegue" id="6ca-Kk-TKQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLM-D8-hZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="126" y="-2415"/>
+            <point key="canvasLocation" x="261.83206106870227" y="-2463.3802816901411"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6ca-Kk-TKQ"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="Exchango 32" width="32" height="32"/>
         <image name="arrow.clockwise" catalog="system" width="113" height="128"/>

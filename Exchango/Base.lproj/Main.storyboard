@@ -165,7 +165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYT-Xh-bhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17.557251908396946" y="-720.42253521126759"/>
+            <point key="canvasLocation" x="-240" y="-1322"/>
         </scene>
         <!--search-->
         <scene sceneID="zX5-rA-jDM">
@@ -220,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hbQ-oJ-ZNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="841.9847328244274" y="-720.42253521126759"/>
+            <point key="canvasLocation" x="534" y="-1323"/>
         </scene>
         <!--home-->
         <scene sceneID="ev5-DQ-dbY">
@@ -643,7 +643,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yvQ-Vv-utb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1571.7557251908397" y="-720.42253521126759"/>
+            <point key="canvasLocation" x="1265" y="-1323"/>
         </scene>
         <!--profile-->
         <scene sceneID="ZCW-Rt-dks">
@@ -903,7 +903,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbw-C4-NEV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2278.6259541984732" y="-720.42253521126759"/>
+            <point key="canvasLocation" x="1960" y="-1323"/>
         </scene>
         <!--listing-->
         <scene sceneID="q4f-Ba-NYH">
@@ -932,7 +932,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R0q-D2-rU3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2989" y="-720"/>
+            <point key="canvasLocation" x="2718" y="-1323"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="9Ov-ct-oPU">
@@ -966,7 +966,7 @@
         <!--Login View Controller-->
         <scene sceneID="V0U-1s-NrP">
             <objects>
-                <viewController id="u5e-77-VCL" customClass="LoginViewController" customModule="Exchango" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="u5e-77-VCL" customClass="LoginViewController" customModule="Exchango" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V2g-oc-erT">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1369,7 +1369,7 @@
                                     </attributedString>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="backButtonPressed:" destination="S59-Ft-pgN" eventType="touchUpInside" id="aTZ-pH-alw"/>
+                                    <action selector="cancelButtonPressed:" destination="S59-Ft-pgN" eventType="touchUpInside" id="5me-HZ-9vo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1399,12 +1399,12 @@
                         <outlet property="Password" destination="6bi-kk-8Ce" id="8gM-iT-msU"/>
                         <outlet property="SignUpCompleteButton" destination="SWm-sS-glG" id="oli-Zs-xq2"/>
                         <outlet property="Username" destination="wZa-Rl-uO1" id="EGV-yX-3Rn"/>
-                        <segue destination="Sym-8i-Z5n" kind="show" customClass="NewViewControllerSegue" id="6ca-Kk-TKQ"/>
+                        <segue destination="Sym-8i-Z5n" kind="show" identifier="NewViewControllerSegue" id="6ca-Kk-TKQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLM-D8-hZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="261.83206106870227" y="-2463.3802816901411"/>
+            <point key="canvasLocation" x="-240" y="-2248"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

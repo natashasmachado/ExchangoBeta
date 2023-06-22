@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, SignUpDelegate {
   
   
   @IBOutlet var FirstName: UITextField!
@@ -24,38 +24,44 @@ class SignUpViewController: UIViewController {
   
   
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "NewViewControllerSegue" {
-      if let newViewController = segue.destination as? NewViewController {
-        newViewController.username = Username.text
+      if segue.identifier == "NewViewControllerSegue" {
+          if let newViewController = segue.destination as? NewViewController {
+              newViewController.username = Username.text
+          }
       }
-    }
   }
-  
+
+  func didSignUp(withName name: String, email: String) {
+          performSegue(withIdentifier: "NewViewControllerSegue", sender: self)
+      }
+
   
   @IBAction func signUpButtonPressed(_ sender: UIButton) {
     if FirstName.text?.isEmpty == true || LastName.text?.isEmpty == true || Username.text?.isEmpty == true || Email.text?.isEmpty == true || Password.text?.isEmpty == true {
-            // Display an alert to notify the user
-            let alert = UIAlertController(title: "Incomplete Information", message: "Please complete all fields before signing up.", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)
-        } else {
-            // All required fields are filled, proceed with sign-up
-            guard let name = Username.text, let email = Email.text else {
-                return
-            }
-            delegate?.didSignUp(withName: name, email: email)
-            dismiss(animated: true, completion: nil)
+      let alert = UIAlertController(title: "Missing Information", message: "Please complete all fields before signing up.", preferredStyle: .alert)
+      alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+      present(alert, animated: true, completion: nil)
+    } else {
+      guard let name = Username.text, let email = Email.text else {
+        return
+      }
+      delegate?.didSignUp(withName: name, email: email)
+    }
+  }
+  
+  @IBAction func cancelButtonPressed(_ sender: UIButton) {
+    navigateToLoginViewController()
+  }
+  
+  private func navigateToLoginViewController() {
+    if let loginViewController = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
+            present(loginViewController, animated: true, completion: nil)
         }
   }
   
-  @IBAction func backButtonPressed(_ sender: UIButton) {
-    navigationController?.popToRootViewController(animated: true)
-  }
-
-  
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    delegate = self
   }
 }
 

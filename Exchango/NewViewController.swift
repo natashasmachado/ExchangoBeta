@@ -16,15 +16,16 @@ class NewViewController: UIViewController, UIImagePickerControllerDelegate, UINa
   @IBOutlet var UsernameLabel: UILabel!
   @IBOutlet var collectionView: UICollectionView!
   
+    
   var username: String?
   var availabilityLabel: UILabel!
   var selectedImages: [UIImage] = []
-  
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
     UsernameLabel.text = username
+    
     
     collectionView?.register(UINib(nibName: "PhotoCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "PhotoCollectionViewCell")
     collectionView?.dataSource = self
@@ -102,7 +103,7 @@ private func showAvailabilityLabel() {
   availabilityLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 200, height: 50))
   availabilityLabel.center = view.center
   availabilityLabel.textAlignment = .center
-  availabilityLabel.textColor = .black
+  availabilityLabel.textColor = .white
   view.addSubview(availabilityLabel)
 }
 
